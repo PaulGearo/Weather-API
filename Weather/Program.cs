@@ -25,18 +25,23 @@ namespace ChuckNorrisApi
             return zipCode;
         }
 
+        //This method gets the API from OpenWeathermap.com 
         static string GetUserWeather()
         {
+            //
             string AppSettings = File.ReadAllText("AppSetting.Dev.Json");
             string appId = JObject.Parse(AppSettings)["appId"].ToString();
 
             string zipCode = ZipCode();
+
+            //
             WebClient webClient = new WebClient();
             string apiResponce = webClient.DownloadString($"https://api.openweathermap.org/data/2.5/weather?zip={zipCode},us&appid={appId}");
             string weather = JObject.Parse(apiResponce)["main"]["temp"].ToString();
             return weather;
         }
 
+        //This method coverts Kelvin to fahrenheit 
         public static double TempConv(string temp)
         {
             double tempKel = double.Parse(temp);
