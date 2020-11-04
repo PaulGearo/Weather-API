@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": -82.35,
+    "lat": 27.06
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 298.16,
+    "feels_like": 296.6,
+    "temp_min": 297.59,
+    "temp_max": 298.71,
+    "pressure": 1016,
+    "humidity": 65
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 6.2,
+    "deg": 30
+  },
+  "clouds": {
+    "all": 1
+  },
+  "dt": 1601652888,
+  "sys": {
+    "type": 1,
+    "id": 6184,
+    "country": "US",
+    "sunrise": 1601637755,
+    "sunset": 1601680461
+  },
+  "timezone": -14400,
+  "id": 0,
+  "name": "Venice",
+  "cod": 200
+}
